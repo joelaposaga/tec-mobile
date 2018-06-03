@@ -13,22 +13,12 @@ import {
 import Logo from '../../images/elite-cars-logo.png';
 
 export default class Header extends React.Component {
-
-
-	toggleMenuDrawer(e) {
-		e.preventDefault();
-		var drawerMenu = document.querySelector('.drawer_menu');
-		drawerMenu.classList.toggle('show');
-
-		
-	}
-
 	render() {
 		return (
 			<header>
 				<div className="menu">
 					<div className="menu_button">
-						<a href="" onClick={ this.toggleMenuDrawer }><GoThreeBars /></a>
+						<a href="" onClick={this.props.handleMouseDown}><GoThreeBars /></a>
 					</div>
 					<div className="logo">
 						<a href=""><img src={Logo} /></a>
