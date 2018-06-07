@@ -1,10 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {
+	BrowserRouter as Router,
+	Switch,
+	Route,
+	Link
+} from 'react-router-dom'
 
 import './sassfiles/main_style.scss';
 
 import Header from './components/header/header.jsx';
 import DrawerMenu from './components/header/drawer_menu.jsx';
+
+/* pages */
+import Home from './components/page/home.jsx';
+import About from './components/page/about.jsx';
 
 class Page extends React.Component {
 
